@@ -6,9 +6,6 @@
 
 Aqui encontraras todoas las páginas que lo integran
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-
 - [inico](https://deluxe-valkyrie-765b5a.netlify.app/)
 - [sucursales](https://deluxe-valkyrie-765b5a.netlify.app/sucursales)
 - [nosotros](https://deluxe-valkyrie-765b5a.netlify.app/nosotros)

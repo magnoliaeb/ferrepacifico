@@ -1,0 +1,115 @@
+input {
+  // width: 100% !important;
+  // height: 44px !important;
+}
+
+.v-text-field .v-input__control .v-input__slot {
+  min-height: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  border-radius: 6px;
+  // border-color: red !important;
+}
+
+.theme--light.v-btn--active:hover::before,
+.theme--light.v-btn--active::before {
+  opacity: 0 !important;
+}
+
+.v-text-field {
+  .v-input__control {
+    min-height: 40px !important;
+    .v-input__slot {
+      height: 40px !important;
+    }
+  }
+}
+
+.v-input.v-textarea {
+  .v-input__control {
+    .v-input__slot {
+      height: 115px !important;
+    }
+  }
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: $fs-sm;
+  color: $secondary;
+  font-weight: 700;
+  font-family: $font-montserrat;
+}
+
+// select--marcas-flitros
+.filters {
+  .v-select {
+    // width: 164px;
+    .v-input__control {
+      min-height: 32px !important;
+      .v-input__slot {
+        height: 32px !important;
+        width: 100%;
+        label {
+          font-size: $fs-xs !important;
+          color: #979797;
+          font-weight: 400;
+          font-family: "Montserrat";
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// button {
+//   // background-color: #003a70 !important;
+// }
+
+// button.text {
+//   background: transparent !important;
+// }
+
+.button-primary {
+  text-transform: uppercase !important;
+  color: white !important;
+  height: 45px !important;
+  font-size: $fs-sm;
+  font-weight: bold;
+  background-color: $primary !important;
+}
+
+.button-primary.v-size--small {
+  height: 40px !important;
+}
+
+.content-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (min-width: $md) {
+  .v-text-field {
+    .v-input__control {
+      min-height: 44px !important;
+
+      .v-input__slot {
+        height: 44px !important;
+      }
+    }
+  }
+  .v-input.v-textarea {
+    .v-input__control {
+      .v-input__slot {
+        height: 70px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+button#popover,
+button#menu,
+button#filter,
+button#search {
+  .v-btn__content {
+    pointer-events: none !important;
+  }
+  span {
+    pointer-events: none !important;
+  }
+  img {
+    pointer-events: none !important;
+  }
+}
+
+h2,
+h1 {
+  font-size: $fs-2xl;
+  color: $info;
+  font-weight: 300;
+  text-align: center;
+
+  strong {
+    font-weight: 800;
+    color: $secondary;
+  }
+}
+
+.title-header {
+  p {
+    font-size: $fs-xs;
+    letter-spacing: 1px;
+    color: $info;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: $fs-2xl;
+    color: $secondary;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .line {
+    height: 3px;
+    background-color: $secondary;
+    width: 38px;
+  }
+}
+
+.menu {
+  .v-icon {
+    font-size: $fs-base !important;
+  }
+}
+
+// header filter
+
+@media screen and (min-width: $md) {
+  .title-header {
+    .line {
+      height: 4px;
+    }
+  }
+
+  // final
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  // margin: 0 auto;
+  // width: 80%;
+}

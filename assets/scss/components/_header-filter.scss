@@ -1,0 +1,28 @@
+.v-breadcrumbs {
+  padding-left: 0;
+  .v-breadcrumbs__item {
+    font-size: $fs-xs !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    color: #8a8a8a !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+  }
+  .v-breadcrumbs__item--disabled {
+    font-size: $fs-sm !important;
+    letter-spacing: 1px !important;
+    color: #003a70 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-style: normal !important;
+  }
+}
+
+@media screen and (min-width: $md) {
+  // .v-breadcrumbs {
+  //   .v-breadcrumbs__item {
+  //   }
+  //   .v-breadcrumbs__item--disabled {
+  //   }
+  // }
+}

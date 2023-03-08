@@ -1,0 +1,80 @@
+<template>
+  <div v-if="imagesProduct.length" class="">
+    <v-slide-group v-model="model" class="pa-2">
+      <v-slide-item
+        v-for="(img, index) in imagesProduct"
+        :key="index"
+        v-slot="{ active, toggle }"
+      >
+        <v-card
+          :color="active ? '' : 'white'"
+          class="ma-2 d-flex justify-center align-center"
+          :min-height="heightAndidthImg"
+          :height="heightAndidthImg"
+          :width="heightAndidthImg"
+          @click="toggle"
+          flat
+        >
+          <v-img
+            style="object-fit: cover"
+            @click="passImg(img)"
+            :width="heightAndidthImg"
+            transition="scale-transition"
+            :height="heightAndidthImg"
+            :src="require(`../assets/imgs/web/home/${img}.png`)"
+            :alt="img"
+            aspect-ratio="1"
+            class="grey lighten-3 img mx-auto"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  :size="30"
+                  :width="3"
+                  indeterminate
+                  color="primary"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-card>
+      </v-slide-item>
+    </v-slide-group>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      model: 0,
+    };
+  },
+  props: {
+    imagesProduct: Array,
+  },
+  computed: {
+    heightAndidthImg() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return "60px";
+        case "sm":
+          return "60px";
+        case "md":
+          return "90px";
+        case "lg":
+          return "90px";
+        case "xl":
+          return "90px";
+      }
+    },
+  },
+  methods: {
+    passImg(img) {
+      this.$emit("changeImg", img);
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
